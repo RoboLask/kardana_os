@@ -409,6 +409,12 @@ while True:
                                     
 ''')
         time.sleep(2)
+    elif menu == "parcel":
+        print("Start parcel...")
+        time.sleep(1)
+        os.system("clear")
+        parcpkg = input("Write the package name(.pkg for installation, and .rm for removal): ")
+        os.system("./parcel " + parcpkg)
     elif menu == "about":
         print(''' 
           _  __             _                     _____             ____  
@@ -429,12 +435,22 @@ while True:
             "Node Name": platform.node(),
             "Processor": platform.processor()
         }
-
         print("Information about your computer:")
         for key, value in system_info.items():
             print(f"{key}: {value}")
         time.sleep(5)
         os.system("cls")
+    elif menu == "ka_terminal":
+        print("Welcome to Kardana Terminal!")
+
+        while True:
+            command = input("[ root@Kardana ] >> ")
+            if command == "exit":
+                print("Goodbye!")
+                os.system("clear")
+                break
+            else:
+                os.system(command)
     elif menu.lower().startswith("kardana_install"):
         install_application(installed_apps)
     elif menu.lower().startswith("kardana_uninstall"):
