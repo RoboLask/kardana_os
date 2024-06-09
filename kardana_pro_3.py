@@ -12,7 +12,7 @@ from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent, QMediaPlaylist
 import random
 import pygame
 colorama.init()
-os.system('cls')
+os.system('clear')
 version = "KARDANA_PRO_3"
 calculator = "Calculator"
 kardana_play = "Kardana Play"
@@ -446,4 +446,4 @@ while True:
         time.sleep(2)
         os.system('cls')
     else:
-        os.system('cls')
+        os.system('clear')
