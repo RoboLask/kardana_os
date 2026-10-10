@@ -1,0 +1,10 @@
+# Kardana system config
+# Edit this file, then run:  sys-config update
+language = en            # en / ua
+loading_window = on      # on / off  - startup splash and "Loading..."
+city =                   # city for Weather, e.g. Warsaw
+country =                # 2-letter country code for Weather, e.g. PL
+prompt = {user}@kardana:{path}$     # placeholders: {user} {path}
+music_dir =              # music folder (empty = sys/kardana_music)
+update_url = https://raw.githubusercontent.com/RoboLask/kardana_os/main/kardana_pro_3.py
+repo = beepeew_repo|https://raw.githubusercontent.com/RoboLask/beepeew_repo/main
